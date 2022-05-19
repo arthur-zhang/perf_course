@@ -3,3 +3,5 @@
 */.idea/
 .DS_Store
 */cmake-build-debug/
+/jvmti_demo/cmake_install.cmake
+/jvmti_demo/my_Makefile
