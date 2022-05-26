@@ -9,7 +9,6 @@ import java.net.URL;
 import java.net.URLClassLoader;
 import java.util.HashMap;
 import java.util.Map;
-import java.util.concurrent.TimeUnit;
 
 import javax.servlet.http.HttpServletRequest;
 
@@ -20,7 +19,7 @@ import javax.servlet.http.HttpServletRequest;
 public class MyController {
     @GetMapping("/")
     public String index() throws InterruptedException {
-        TimeUnit.SECONDS.sleep(100);
+//        TimeUnit.SECONDS.sleep(100);
         return "hello";
     }
 

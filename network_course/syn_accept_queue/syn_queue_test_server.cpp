@@ -18,7 +18,7 @@ int main() {
 
     serv_addr.sin_family = AF_INET;
     serv_addr.sin_addr.s_addr = htonl(INADDR_ANY);
-    serv_addr.sin_port = htons(9090);
+    serv_addr.sin_port = htons(8080);
 
     if (::bind(listen_fd, (struct sockaddr *) &serv_addr, sizeof(serv_addr)) == -1) {
         exit(1);

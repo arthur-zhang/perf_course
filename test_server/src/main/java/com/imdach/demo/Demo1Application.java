@@ -14,7 +14,7 @@ public class Demo1Application {
 
     public static void main(String[] args) throws IOException {
         List<FileInputStream> root = new ArrayList<>();
-        for (int i = 0; i < 800; i++) {
+        for (int i = 0; i < 900; i++) {
             File f = new File("/tmp/test" + i + ".txt");
             if (!f.exists()) f.createNewFile();
             FileInputStream fileInputStream = new FileInputStream(f);
