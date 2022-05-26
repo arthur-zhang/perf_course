@@ -13,8 +13,10 @@ func main() {
 	time.Sleep(time.Minute * 10)
 }
 func connect() {
-	_, err := net.Dial("tcp4", "10.211.55.15:9090")
+	_, err := net.Dial("tcp4", "192.168.31.172:8080")
 	if err != nil {
 		fmt.Println(err)
 	}
+	ch := make(chan int)
+	_ = <- ch
 }

@@ -1,8 +1,8 @@
+import java.io.IOException;
+
 import okhttp3.OkHttpClient;
 import okhttp3.Request;
 import okhttp3.Response;
-
-import java.io.IOException;
 
 /**
  * Created By Arthur Zhang at 2022/3/30
@@ -12,7 +12,7 @@ public class MyTest6 {
     public static void run(boolean direct) throws IOException {
         String url;
         if (direct) {
-            url = "http://192.168.31.197:8080/hello";
+            url = "http://192.168.31.197:8000/hello";
         } else {
             url = "http://192.168.31.197:8001/hello";
         }
@@ -51,7 +51,8 @@ public class MyTest6 {
     }
 
     public static void main(String[] args) throws IOException {
-        run(false);
+//        run(false);
+        run(true);
 //        run(true);
 //        runLongUrl();
     }

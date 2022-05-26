@@ -9,7 +9,7 @@ import java.net.Socket;
 public class DelayAckClient {
     public static void main(String[] args) throws IOException {
         Socket socket = new Socket();
-        socket.connect(new InetSocketAddress("10.211.55.3", 8888));
+        socket.connect(new InetSocketAddress("192.168.31.197", 8888));
         InputStream inputStream = socket.getInputStream();
         OutputStream outputStream = socket.getOutputStream();
         BufferedReader reader = new BufferedReader(new InputStreamReader(inputStream));

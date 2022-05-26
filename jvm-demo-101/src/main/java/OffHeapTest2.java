@@ -1,4 +1,3 @@
-import sun.nio.ch.DirectBuffer;
 
 import java.io.IOException;
 import java.io.RandomAccessFile;
@@ -36,7 +35,7 @@ public class OffHeapTest2 {
             System.in.read();
             System.out.println("closing...");
 
-            ((DirectBuffer) buf).cleaner().clean();
+//            ((DirectBuffer) buf).cleaner().clean();
             fc.close();
             f.close();
 //            world.close();
